@@ -16,4 +16,4 @@ representation of the data, while also addressing the computational limitations 
 **Results:** Simpler neural networks achieved good results using only activation timestamps or both timestamps and charge values.The
 most performing has been LSTM Layer-based neural network, although at the expense of time. 
 
-**__Datasets__: ** i dataset originali sono presenti su Kaggle al seguente link [https://www.kaggle.com/competitions/icecube-neutrinos-in-deep-ice.](https://www.kaggle.com/competitions/icecube-neutrinos-in-deep-ice/data) In particular, the icecube_3 dataset was created by linking the first three rows of the train folder (batch_1.parquet, batch_10.parquet, batch_100.parquet.
+__Datasets__:i dataset originali sono presenti su Kaggle al seguente link [https://www.kaggle.com/competitions/icecube-neutrinos-in-deep-ice.](https://www.kaggle.com/competitions/icecube-neutrinos-in-deep-ice/data) In particular, the icecube_3 dataset was created by linking the first three rows of the train folder (batch_1.parquet, batch_10.parquet, batch_100.parquet.
