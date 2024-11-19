@@ -16,8 +16,7 @@ The original datasets come from the Kaggle competition ‘[IceCube - Neutrinos i
 - 
 ## How to use 
 1. **Clon the repository**: 
-``bash 
-git clone https://github.com/MariaGraziaMiccoli/NeutrinosML.git``
+`` git clone https://github.com/MariaGraziaMiccoli/NeutrinosML.git``
 
 3. **Download the datasets**: 
 Visit the dataset Kaggle page and place the `.parquet` files in the same directory as the project. 
