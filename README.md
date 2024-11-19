@@ -17,7 +17,7 @@ The original datasets come from the Kaggle competition ‘[IceCube - Neutrinos i
 ## How to use 
 1. **Clon the repository**: 
 ``bash 
-git clone https://github.com/MariaGraziaMiccoli/NeutrinosML.git '''
+git clone https://github.com/MariaGraziaMiccoli/NeutrinosML.git``
 
 3. **Download the datasets**: 
 Visit the dataset Kaggle page and place the `.parquet` files in the same directory as the project. 
@@ -29,5 +29,5 @@ Visit the dataset Kaggle page and place the `.parquet` files in the same directo
 NeutrinosML shows that even simple models can achieve competitive results in predicting neutrino trajectories, paving the way for further studies with complete datasets and greater computational resources. 
 
 ## Licence 
-[Specify if there is a licence]. 
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
