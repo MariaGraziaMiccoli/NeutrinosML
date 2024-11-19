@@ -1,19 +1,33 @@
-# PASSING NEUTRINOS
-## Azimuth and Zenith prediction based on Neural Networks
+# NeutrinosML 
 
-**Context:** This report explores the study of subatomic particles known as neutrinos. These particles are nearly massless, carry no
-electric charge, and, despite being the most abundant particles in the universe, are incredibly difficult to detect. However, the IceCube
-Neutrino Observatory, a telescope installed in the ice of the South Pole, is able to detect these elusive particles, enabling scientists to
-study their trajectories through the Earth.
+**Author**: Maria Grazia Miccoli 
+## Overview 
+**NeutrinosML** is a project created to tackle the Machine Learning university exam. The main aim is to predict the direction of neutrinos in terms of azimuth and zenith angles, using data from the IceCube telescope at the South Pole. This work was conducted to demonstrate that simple approaches, such as basic neural networks, can achieve valid results compared to complex models. 
+The project includes: 
+1. **Data preprocessing**: filters to reduce noise and improve the representativeness of the data. 
+2. **Predictive models**: neural networks tested on preprocessed data, comparing different architectures. 
+## Data 
+The original datasets come from the Kaggle competition ‘[IceCube - Neutrinos in Deep Ice](https://www.kaggle.com/competitions/icecube-neutrinos-in-deep-ice)’. To limit the impact of computational resources, a subset called `icecube_3` was created by merging three initial batches of the training dataset (`batch_1.parquet`, `batch_10.parquet`, `batch_100.parquet`). 
 
-**Aims:** A recently closed challenge on Kaggle tasked participants with predicting the direction of these particles, specifically their
-azimuth and zenith angles.
+## Project Structure 
+- **Preprocessing.ipynb**: notebook for data cleaning, noise removal and construction of input matrices (time and charge). 
+- **Models.ipynb**: notebook for construction and evaluation of neural networks for azimuth and zenith angle prediction. 
+- **Report.pdf**: comprehensive document describing the entire process, from data preparation to the results obtained.
+- 
+## How to use 
+1. **Clon the repository**: 
+``bash 
+git clone https://github.com/MariaGraziaMiccoli/NeutrinosML.git '''
 
-**Methods:** The top-performing solutions demonstrated that this prediction is feasible by representing each neutrino event as a graph
-and utilizing transformer-based models. My objective was to tackle this task by employing simpler neural networks and a matrix
-representation of the data, while also addressing the computational limitations of the available resources.
+3. **Download the datasets**: 
+Visit the dataset Kaggle page and place the `.parquet` files in the same directory as the project. 
+4. **Execute notebooks**: 
+- Run `Preprocessing.ipynb` to generate the input matrices. 
+- Run `Models.ipynb` to experiment with the neural network models. 
 
-**Results:** Simpler neural networks achieved good results using only activation timestamps or both timestamps and charge values.The
-most performing has been LSTM Layer-based neural network, although at the expense of time. 
+## Conclusions 
+NeutrinosML shows that even simple models can achieve competitive results in predicting neutrino trajectories, paving the way for further studies with complete datasets and greater computational resources. 
 
-__Datasets__:i dataset originali sono presenti su Kaggle al seguente link [https://www.kaggle.com/competitions/icecube-neutrinos-in-deep-ice.](https://www.kaggle.com/competitions/icecube-neutrinos-in-deep-ice/data) In particular, the icecube_3 dataset was created by linking the first three rows of the train folder (batch_1.parquet, batch_10.parquet, batch_100.parquet.
+## Licence 
+[Specify if there is a licence]. 
+
